@@ -34,7 +34,7 @@ namespace Annabakes.API.Controllers
         }
 
         [Route("products")]
-        [HttpPost]
+        [HttpDelete]
         public bool DeleteProducts(Product products)
         {
             using var dbContext = new BakeryDbContext();
@@ -46,7 +46,7 @@ namespace Annabakes.API.Controllers
         }
 
         [Route("products")]
-        [HttpPost]
+        [HttpPut]
         public bool UpdateProducts(Product products)
         {
             using var dbContext = new BakeryDbContext();
